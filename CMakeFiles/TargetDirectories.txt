@@ -1,0 +1,3 @@
+/home/pedro/Desktop/clusteringteste/CMakeFiles/rebuild_cache.dir
+/home/pedro/Desktop/clusteringteste/CMakeFiles/untitled.dir
+/home/pedro/Desktop/clusteringteste/CMakeFiles/edit_cache.dir
