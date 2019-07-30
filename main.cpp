@@ -46,7 +46,7 @@ static void onMouse( int event, int x, int y, int, void* )
     int area;
     if( useMask )
     {
-        threshold(mask, mask, 1, 128, THRESH_BINARY);
+        threshold(mask, mask, 127, 255, THRESH_BINARY);
         area = floodFill(dst, mask, seed, newVal, &ccomp, Scalar(lo, lo, lo),
                   Scalar(up, up, up), flags);
         imshow( "mask", mask );
@@ -57,7 +57,10 @@ static void onMouse( int event, int x, int y, int, void* )
                   Scalar(up, up, up), flags);
     }
     imshow("image", dst);
-    cout << area << " pixels were repainted\n";
+    cout << area << " pixels were repainted\n" << endl; 
+    cout << upDiff << " upDiff" << endl;
+    cout << loDiff << " loDiff" << endl;
+    cout << "Mascara: " << newVal << endl;
 }
 int main( int argc, char** argv )
 {
